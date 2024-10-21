@@ -59,8 +59,8 @@ function testFun(numArr, description) {
   const serialized = serialize(numArr);
   const deserialized = deserialize(serialized);
 
-  //console.log(`Serialized string: "${serialized}"`);
   console.log(`Serialized string length: ${serialized.length}`);
+  console.log(`Original serialization: ${stdLength}`);
 
   assert.deepStrictEqual(deserialized, numArr, 'Deserialized and original arrays are not equal');
   
